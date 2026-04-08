@@ -94,8 +94,8 @@
 		  </li>
 		  
 		  <li>
-			<a href="/atom.xml" title="Subscribe me.">
-			  <i class=""></i>RSS
+			<a href="/papers" title="My paper reading notes">
+			  <i class=""></i>Papers
 			</a>
 		  </li>
 		  
@@ -137,6 +137,58 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2026/04/08/Satelite-UAV-of-Sautenkov/" >Satelite-UAV-of-Sautenkov</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2026-04-08  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="mission-planing-for-uav-by-oleg-sautenkov"><a class="markdownIt-Anchor" href="#mission-planing-for-uav-by-oleg-sautenkov"></a> Mission Planing For UAV by <a target="_blank" rel="noopener" href="https://sauten.tech/">Oleg Sautenkov</a></h2>
+<blockquote>
+<p>此笔记记录Oleg Sautenkov三篇关于UAV-Mission Planing的文章。</p>
+</blockquote>
+<h3 id="mission-planing"><a class="markdownIt-Anchor" href="#mission-planing"></a> Mission Planing</h3>
+<p>为无人机设计一条从起点到终点、满足任务要求且最优的飞行路径与动作序列。</p>
+<ul>
+<li><strong>路径与动作</strong>：不仅规划“怎么飞”（路径），还规划“做什么”（动作，如在何处悬停、拍照、传输数据。</li>
+<li><strong>满足约束</strong>：必须遵守任务要求（如避开禁飞区、保持与卫星的通信、在电池续航内完成）。</li>
+<li><strong>追求最优</strong>：在众多可行方案中，找到能耗最少、时间最短或信号最好的平衡解</li>
+</ul>
+<h3 id="uav-vla-vision-language-action-system-for-large-scale-aerial-mission-generation"><a class="markdownIt-Anchor" href="#uav-vla-vision-language-action-system-for-large-scale-aerial-mission-generation"></a> UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation</h3>
+<blockquote>
+<p>主要针对利用卫星图（俯瞰）+ 高层指令输出航点序列（经纬度）</p>
+</blockquote>
+<p><img src="/images/UAV-VLA.png" alt></p>
+<h4 id="problem"><a class="markdownIt-Anchor" href="#problem"></a> Problem</h4>
+<ul>
+<li>传统UAV任务规划严重依赖专业操作员，使用地面站软件（如Mission Planner）手动设置航点。</li>
+<li>现有AI方法（VLA/VLN）的局限
+<ul>
+<li>数据饥渴： 需要大量“语言-动作”配对数据进行训练，在真实、多样的UAV场景中难以获得。</li>
+<li>缺乏全局视野： 许多方法专注于第一视角的导航（VLN），缺乏从“上帝视角”（卫星图）进行全局、高效的路径规划。</li>
+</ul>
+</li>
+</ul>
+	
+	</div>
+  <a type="button" href="/2026/04/08/Satelite-UAV-of-Sautenkov/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2026/04/08/hello-world/" >Hello World</a>
 		</h3>
 		</div>
@@ -152,13 +204,15 @@
 	
 	
 		<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 	
 	</div>
   <a type="button" href="/2026/04/08/hello-world/#more" class="btn btn-default more">Read More</a>
@@ -206,6 +260,10 @@
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2026/04/08/Satelite-UAV-of-Sautenkov/" ><i class="fa fa-file-o"></i>Satelite-UAV-of-Sautenkov</a>
+      </li>
     
       <li>
         <a href="/2026/04/08/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
