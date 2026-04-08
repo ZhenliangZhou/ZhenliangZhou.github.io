@@ -6,23 +6,31 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>about | Hexo</title>
-  <meta name="author" content="John Doe">
+  <title>about | Hello</title>
+  <meta name="author" content="Zhenliang Zhou">
   
-  <meta name="description" content="你好，我是 Zhenliang Zhou">
+  <meta name="description" content="/* 模态框背景 */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="about"/>
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="Hello"/>
 
   
     <meta property="og:image" content=""/>
   
 
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Hello" type="application/atom+xml">
   
   
     <link href="/favicon.png" rel="icon">
@@ -67,7 +75,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="/">Hexo</a>
+	  <a class="navbar-brand" href="/">Hello</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
@@ -84,14 +92,14 @@
 		  </li>
 		  
 		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class=""></i>Tags
+			<a href="/about" title="Hi,I'm Zhenliang Zhou.">
+			  <i class="fa fa-user"></i>About
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="/about" title="About me.">
-			  <i class=""></i>About
+			<a href="/cv" title="My CV.">
+			  <i class=""></i>CV
 			</a>
 		  </li>
 		  
@@ -128,8 +136,120 @@
 	<div class="mypage">		
 	  		
 
-	  <h1 id="你好我是-zhenliang-zhou"><a class="markdownIt-Anchor" href="#你好我是-zhenliang-zhou"></a> 你好，我是 Zhenliang Zhou</h1>
-
+	  <style>
+    /* 模态框背景 */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        cursor: pointer;
+    }
+    /* 模态框内容 - 图片 */
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    /* 关闭按钮 */
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .close:hover {
+        color: #bbb;
+    }
+    /* 可点击的奖项样式 */
+    .award-item {
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    .award-item:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+</style>
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/images/avatar.jpg" 
+         alt="Zhenliang Zhou" 
+         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+</div>
+<!-- 社交图标区域 -->
+<div style="display: flex; gap: 20px; margin-top: 10px; margin-bottom: 30px; justify-content: center;">
+    <a href="https://github.com/mysciz" target="_blank" style="text-decoration: none; font-size: 28px;">
+        <i class="fa fa-github"></i> 
+    </a>
+    <a href="https://twitter.com/你的用户名" target="_blank" style="text-decoration: none; font-size: 28px;">
+        <i class="fa fa-twitter"></i> 
+    </a>
+    <a href="https://www.linkedin.com/in/你的用户名" target="_blank" style="text-decoration: none; font-size: 28px;">
+        <i class="fa fa-linkedin"></i> 
+    </a>
+    <a href="mailto:zhenliangzhou01@gmail.com" style="text-decoration: none; font-size: 28px;">
+        <i class="fa fa-envelope"></i> 
+    </a>
+</div>
+<h1 id="hiim-zhenliang-zhou"><a class="markdownIt-Anchor" href="#hiim-zhenliang-zhou"></a> Hi，I'm Zhenliang Zhou.</h1>
+<p style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; line-height: 1.6; color: #aaaaaa;">
+    My name is <strong style="color: #cccccc; text-transform: none;">Zhenliang Zhou</strong>, a third-year undergraduate student from 
+    <strong style="color: #cccccc; text-transform: none;">Xi'an Jiaotong University</strong>, majoring in 
+    <strong style="background-color: #8e44ad; color: #e0e0e0; padding: 0 4px; border-radius: 4px; text-transform: none;">Computer Science and Technology (with honor)</strong>. 
+    Based on my first year in the Mechanical Engineering program and my experience in robotics competitions, 
+    I was introduced to <strong style="color: #cccccc; text-transform: none;">Computer Vision and Robotics</strong>. 
+</p>
+<p style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; line-height: 1.6; color: #aaaaaa;">
+    I am currently working on <strong style="color: #cccccc; text-transform: none;">Vision-Language NNavigation (VLN) for Drones</strong>, focusing on integrating computer vision and natural language to enable intelligent UAV navigation. 
+    I am actively seeking <strong style="background-color: #8e44ad; color: #e0e0e0; padding: 0 4px; border-radius: 4px; text-transform: none;">Master/Ph.D. positions</strong> in <strong style="color: #cccccc; text-transform: none;">Embodied AI / Computer Vision</strong> for Fall 2026, as well as <strong style="background-color: #8e44ad; color: #e0e0e0; padding: 0 4px; border-radius: 4px; text-transform: none;">Research Internship opportunities</strong>.
+</p>
+<h1 id="awards"><a class="markdownIt-Anchor" href="#awards"></a> Awards</h1>
+<ul style="list-style-type: none; padding-left: 0; margin: 0;margin-bottom: 10px">
+    <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        <a href="/images/awards/robocon-harvest.png" target="_blank" style="color: #cccccc; text-decoration: none;">
+            <strong style="color: #cccccc; text-transform: none;">The national first prize</strong> in the 23rd National College Robotics Competition ROBOCON “HARVEST DAY”
+        </a>
+    </li>
+    <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        <a href="/images/awards/robocon-volleyball.png" target="_blank" style="color: #cccccc; text-decoration: none;">
+            <strong style="color: #cccccc; text-transform: none;">Bronze medalist</strong> in the 23rd National College Robotics Competition ROBOCON Volleyball Skills Challenge
+        </a>
+    </li>
+    <li style="margin-bottom: 6px; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        <a href="/images/awards/scholarship.png" target="_blank" style="color: #cccccc; text-decoration: none;">
+            <strong style="color: #cccccc; text-transform: none;">National Scholarships</strong> for the academic year 2023-2024
+        </a>
+    </li>
+    <li style="margin-bottom: 0; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        <a href="/images/awards/robocup.jpeg" target="_blank" style="color: #cccccc; text-decoration: none;">
+            <strong style="color: #cccccc; text-transform: none;">ROBOCUP National Second Prize</strong> in Advanced Vision
+        </a>
+    </li>
+</ul>
+<h1 id="gpa"><a class="markdownIt-Anchor" href="#gpa"></a> GPA</h1>
+<ul style="list-style-type: none; padding-left: 0; margin: 0 0 10px 0;">
+    <li style="margin-bottom: 4px; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        Freshman 92.6/100, 4.03/4.3
+    </li>
+    <li style="margin-bottom: 0; font-family: 'Times New Roman', Times, serif; font-size: 1rem; line-height: 1.4; color: #aaaaaa;">
+        Sophomore 91.6/100, 3.97/4.3
+    </li>
+</ul>
 	  <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
@@ -174,7 +294,7 @@
   <div class="container-narrow">
   <footer> <p>
   
-  &copy; 2026 John Doe's Blog
+  &copy; 2026 Zhenliang Zhou's Blog
   
       powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
 </p>
