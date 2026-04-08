@@ -6,21 +6,21 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Hello</title>
+  <title>mysciz</title>
   <meta name="author" content="Zhenliang Zhou">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="Hello"/>
+  <meta property="og:site_name" content="mysciz"/>
 
   
     <meta property="og:image" content=""/>
   
 
   
-    <link rel="alternative" href="/atom.xml" title="Hello" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="mysciz" type="application/atom+xml">
   
   
     <link href="/favicon.png" rel="icon">
@@ -65,7 +65,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-	  <a class="navbar-brand" href="/">Hello</a>
+	  <a class="navbar-brand" href="/">mysciz</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
@@ -108,7 +108,7 @@
   <div class="container">
   	<div class="content">
     	 <div class="page-header logo">
-  <h1>Hello<span class="blink-fast">|</span></h1>
+  <h1>mysciz<span class="blink-fast">|</span></h1>
 </div>
 
 <div class="row page">
@@ -130,6 +130,100 @@
 		<div class="mypage">
 		
 		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2026/04/09/leyunEAI/" >leyunEAI</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2026-04-09  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="乐云具身项目实训"><a class="markdownIt-Anchor" href="#乐云具身项目实训"></a> 乐云具身项目实训</h2>
+<h3 id="实训内容"><a class="markdownIt-Anchor" href="#实训内容"></a> 实训内容</h3>
+<ol>
+<li><strong>环境配置</strong>：搭建了 ROS + Python 开发环境，熟悉了机械臂的基本操作</li>
+<li><strong>数据采集</strong>：录制了多个操作任务的演示数据，包括抓取、放置等动作</li>
+<li><strong>模型微调</strong>：基于乐云平台对预训练模型进行微调，提升了任务成功率</li>
+<li><strong>技能验证</strong>：在真实机械臂上验证了模型效果，实现了端云协同控制</li>
+</ol>
+<h3 id="实训效果展示"><a class="markdownIt-Anchor" href="#实训效果展示"></a> 实训效果展示</h3>
+<h4 style="margin-bottom: 5px; color: #cccccc;">将方块放进黑色盒子</h4>
+<video width="100%" controls preload="metadata">
+    <source src="/video/put_cube.mp4" type="video/mp4">
+    您的浏览器不支持视频播放。
+</video>
+<h4 style="margin-bottom: 5px; color: #cccccc;">在一堆物品中将麻将放入合适盒子</h4>
+<video width="100%" controls preload="metadata">
+    <source src="/video/put_mahjiang.mp4" type="video/mp4">
+    您的浏览器不支持视频播放。
+</video>
+<h3 id="实训经验总结"><a class="markdownIt-Anchor" href="#实训经验总结"></a> 实训经验总结</h3>
+<h3 id="实训证书"><a class="markdownIt-Anchor" href="#实训证书"></a> 实训证书</h3>
+	
+	</div>
+  <a type="button" href="/2026/04/09/leyunEAI/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2026/04/09/AerialVLA/" >AerialVLA</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2026-04-09  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="arxiv-2026aerialvla-a-minimalist-end-to-end-vision-language-action-framework-for-uav-navigation"><a class="markdownIt-Anchor" href="#arxiv-2026aerialvla-a-minimalist-end-to-end-vision-language-action-framework-for-uav-navigation"></a> [Arxiv-2026]AerialVLA: A Minimalist End-to-End Vision-Language-Action Framework for UAV Navigation</h2>
+<h3 id="problems"><a class="markdownIt-Anchor" href="#problems"></a> Problems</h3>
+<p>无人机视觉-语言导航（VLN）方法中存在的两大“拐杖”依赖问题：</p>
+<ul>
+<li><strong>密集的“神谕”引导（如每一步都给出“左转”“右转”等精确方向提示），把导航任务降级为被动指令跟随</strong>（Fuzzy Directional Prompting）</li>
+<li><strong>外部物体检测器（如 Grounding DINO）来触发降落,导致割裂的感知-控制回路</strong>（High-DoF Control via Numerical Tokenization）</li>
+</ul>
+<h3 id="innovation"><a class="markdownIt-Anchor" href="#innovation"></a> Innovation</h3>
+<ul>
+<li>提出首个真正端到端的无人机 VLA 模型，摆脱神谕引导和外部检测器。</li>
+<li>设计模糊方向提示 + 数值化动作 token 的轻量架构，提升泛化能力。</li>
+<li>在 TravelUAV 上实现 SOTA，尤其在零样本泛化上表现突出。</li>
+</ul>
+<h3 id="method"><a class="markdownIt-Anchor" href="#method"></a> Method</h3>
+<p><img src="/images/AeriaVLA.png" alt></p>
+<h4 id="minimalist-dual-view-perception"><a class="markdownIt-Anchor" href="#minimalist-dual-view-perception"></a> Minimalist Dual-View Perception</h4>
+<blockquote>
+<p>大多数 UAV-VLN 方法（如 TravelUAV、AVDN）使用多相机阵列（通常是 5 个视角：前、后、左、右、下），这种设计的出发点是&quot;信息越全越好&quot;。
+但本文指出无人机导航的核心是&quot;向前看 + 向下看&quot;，其他视角是锦上添花，而非必要。
+多余的相机可能会造成信息冗余，硬件/计算开销大，过拟合</p>
+</blockquote>
+	
+	</div>
+  <a type="button" href="/2026/04/09/AerialVLA/#more" class="btn btn-default more">Read More</a>
+</div>
+
 		
 			
 	
@@ -248,7 +342,9 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/UAV-VLN/">UAV-VLN<span>1</span></a></li>
+			<li><a href="/categories/EAI/">EAI<span>1</span></a></li>
+		
+			<li><a href="/categories/UAV-VLN/">UAV-VLN<span>2</span></a></li>
 		
 		</ul>
 	</div>
@@ -261,6 +357,14 @@
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2026/04/09/leyunEAI/" ><i class="fa fa-file-o"></i>leyunEAI</a>
+      </li>
+    
+      <li>
+        <a href="/2026/04/09/AerialVLA/" ><i class="fa fa-file-o"></i>AerialVLA</a>
+      </li>
     
       <li>
         <a href="/2026/04/08/Satelite-UAV-of-Sautenkov/" ><i class="fa fa-file-o"></i>Satelite-UAV-of-Sautenkov</a>
@@ -279,7 +383,7 @@
 	<h4>Links</h4>
 	<ul class="blogroll list-unstyled">
 	
-		<li><i class="false"></i><a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" title="" target="_blank"]);">hexo-theme-bithack</a></li>
+		<li><i class="false"></i><a href="https://github.com/mysciz" title="" target="_blank"]);">github</a></li>
 	
 	</ul>
 </div>
